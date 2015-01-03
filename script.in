@@ -1,0 +1,2 @@
+#!/bin/sh
+exec @MONO@ @prefix@/lib/tkd/tkd.exe $MONO_EXTRA_ARGS "$@"

@@ -1,0 +1,32 @@
+1.2.2
+=====
+Scaled tkd.png to 256x256 to remove the gdk-warning due to the icon size being too large
+Removed a couple of lines of redundant code to remove warnings at compile time
+Changed the way that files are referenced, adding System.AppDomain.CurrentDomain.BaseDirectory to the path, instead of just using the filename
+
+1.2.1
+=====
+Minor changes for compatibility with new www.taekwondotheory.co.uk site
+Removed GTI-specific content
+
+1.2
+===
+
+Created a separate topic for Korean counting
+
+1.1
+===
+
+Added the possibility of limiting the number of exercises in a test.
+
+Added console gpl copyright disclaimer/info.
+
+Corrected spelling of 'forearm'
+
+Changed "history" topic to "GTI history"
+
+Changed when new belt meanings are introduced. I had originally thought that students should know the meaning of the belt above the one that they're going for. Students now only need to know the meanings of all the colours on the belt that they are going for.
+
+Added new theory and made minor changes
+
+Added more detail to the tenets

@@ -1,0 +1,40 @@
+AC_INIT(README)
+AC_CANONICAL_SYSTEM
+AM_INIT_AUTOMAKE(tkd, 1.2.2.1)
+AM_MAINTAINER_MODE
+
+AC_PROG_INSTALL
+
+dnl pkg-config
+AC_PATH_PROG(PKG_CONFIG, pkg-config, no)
+if test "x$PKG_CONFIG" = "xno"; then
+	AC_MSG_ERROR([You need to install pkg-config])
+fi
+
+dnl C# compiler
+AC_PATH_PROG(MONOCSC, mono-csc, no)
+AC_PATH_PROG(MONO, mono, no)
+
+if test "x$MONOCSC" = "xno" ; then
+	AC_MSG_ERROR([Can't find mono-csc])
+fi
+
+MCS=$MONOCSC
+
+if test "x$MONO" = "xno"; then
+	AC_MSG_ERROR([No mono runtime found])
+fi
+
+dnl gtk-sharp2
+GTKSHARP2_MINIMUM_VERSION=2.0
+PKG_CHECK_MODULES(GTKSHARP, gtk-sharp-2.0 >= $GTKSHARP2_MINIMUM_VERSION)
+
+AC_SUBST(MCS)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+src/AssemblyInfo.cs
+data/Makefile
+desktop/Makefile
+])

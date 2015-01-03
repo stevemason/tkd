@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Taekwon-Do Theory Assistant
+GenericName=Taekwon-Do Theory Test
+Comment=Test your Taekwon-Do theory knowledge
+Icon=tkd
+Exec=tkd
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Education;GTK;Languages;Sports
