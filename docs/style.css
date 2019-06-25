@@ -1,0 +1,22 @@
+body {background:rgb(255,255,250) url('images/bkgrnd.png') repeat-y;}
+
+h1 {text-align:center;color:rgb(255,165,0);margin-left:15px;margin-right:15px;}
+
+p {color:rgb(50,50,50);margin-left:15px;margin-right:15px;}
+
+.hlinkcurrent:link {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+.hlinkcurrent:visited {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+.hlinkcurrent:active {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+.hlinkcurrent:hover {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+
+.hlink:link {color:black;text-decoration:none;font-weight:bold;}
+.hlink:visited {color:black;text-decoration:none;font-weight:bold;}
+.hlink:active {color:black;text-decoration:none;font-weight:bold;}
+.hlink:hover {color:black;text-decoration:underline;font-weight:bold;}
+
+.downlink:link {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+.downlink:visited {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+.downlink:active {color:rgb(255,165,0);text-decoration:none;font-weight:bold;}
+.downlink:hover {color:rgb(255,165,0);text-decoration:underline;font-weight:bold;}
+
+.kode {background:rgb(220,250,200);font-family:courier,monospace;font-size:80%}
